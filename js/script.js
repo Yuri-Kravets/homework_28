@@ -1,4 +1,4 @@
-//"use strict"
+"use strict"
 
 let calculator = {
     read(a,b) {
@@ -10,17 +10,17 @@ let calculator = {
     },
     
     sum() {
-        if(!this.a && !this.b) throw new Error('error');
+        if(!this.a && !this.b) return 'error';
         return this.a + this.b
         
       },
     
     mul() {
-        if(!this.a && !this.b) throw new Error('error');
+        if(!this.a && !this.b) return 'error';
         return this.a * this.b
       }
     };
     
-calculator.read(10,12);
+calculator.read(6,12);
 alert(calculator.sum());
 alert(calculator.mul());
